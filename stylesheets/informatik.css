@@ -1,4 +1,5 @@
-/* line 3, ../sass/informatik.scss */
+@import url("https://fonts.googleapis.com/css?family=Abel");
+/* line 4, ../sass/informatik.scss */
 html, body {
   margin: 0;
   padding: 0;
@@ -6,14 +7,16 @@ html, body {
   height: 100%;
 }
 
-/* line 11, ../sass/informatik.scss */
+/* line 12, ../sass/informatik.scss */
 #navBar {
   position: relative;
   width: 100%;
   background-color: #2874AB;
   height: 12%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
 }
-/* line 16, ../sass/informatik.scss */
+/* line 19, ../sass/informatik.scss */
 #navBar #navImgContainer {
   position: relative;
   margin-left: 1%;
@@ -23,4 +26,109 @@ html, body {
   background-size: cover;
   background-position: center;
   background-image: url("../images/windows.png");
+}
+
+/* line 31, ../sass/informatik.scss */
+#search {
+  height: 85%;
+  position: relative;
+  width: 100%;
+}
+/* line 35, ../sass/informatik.scss */
+#search #particles-js {
+  height: 100%;
+}
+/* line 39, ../sass/informatik.scss */
+#search #searchBarWrapper {
+  position: absolute;
+  top: 46%;
+  left: 35%;
+  width: 30%;
+  height: 8%;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: repeat(10, 1fr);
+  grid-column-gap: 30px;
+  grid-template-areas: "b b b b b b b b bt bt";
+}
+/* line 54, ../sass/informatik.scss */
+#search #searchBarWrapper #searchBar {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #333;
+  border-radius: 40px;
+  grid-area: b;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-areas: "b b b b b b b b d d";
+  font-family: 'Abel', sans-serif;
+  font-size: 20px;
+}
+/* line 69, ../sass/informatik.scss */
+#search #searchBarWrapper #searchBar #bar {
+  grid-area: b;
+  display: table;
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+}
+/* line 75, ../sass/informatik.scss */
+#search #searchBarWrapper #searchBar #bar #barText {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 81, ../sass/informatik.scss */
+#search #searchBarWrapper #searchBar #showMenu {
+  grid-area: d;
+  width: 100%;
+  height: 100%;
+  display: table;
+  text-align: center;
+}
+/* line 87, ../sass/informatik.scss */
+#search #searchBarWrapper #searchBar #showMenu #text {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 90, ../sass/informatik.scss */
+#search #searchBarWrapper #searchBar #showMenu #text i {
+  font-size: 40px;
+}
+/* line 97, ../sass/informatik.scss */
+#search #searchBarWrapper #button-area {
+  display: inline-block;
+  grid-area: bt;
+}
+/* line 100, ../sass/informatik.scss */
+#search #searchBarWrapper #button-area #outerButtonWrapper {
+  display: table;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+/* line 105, ../sass/informatik.scss */
+#search #searchBarWrapper #button-area #outerButtonWrapper #innerButtonWrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 108, ../sass/informatik.scss */
+#search #searchBarWrapper #button-area #outerButtonWrapper #innerButtonWrapper button {
+  width: 100%;
+  height: 70%;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  background-color: #2874AB;
+  border: 2px solid transparent;
+  color: white;
+  transition: all 250ms;
+  font-family: 'Abel', sans-serif;
+  font-size: 20px;
+}
+/* line 120, ../sass/informatik.scss */
+#search #searchBarWrapper #button-area #outerButtonWrapper #innerButtonWrapper button:hover {
+  border: 2px solid #2874AB;
+  background-color: white;
+  color: #2874AB;
 }

@@ -11,19 +11,16 @@ html, body {
   position: relative;
   width: 100%;
   background-color: #2874AB;
+  height: 12%;
 }
-/* line 15, ../sass/informatik.scss */
+/* line 16, ../sass/informatik.scss */
 #navBar #navImgContainer {
   position: relative;
   margin-left: 1%;
-  min-height: 100%;
-  display: table;
-}
-/* line 20, ../sass/informatik.scss */
-#navBar #navImgContainer img {
-  display: table-cell;
-  position: relative;
-  width: 60%;
-  vertical-align: middle;
-  width: 25%;
+  height: 100%;
+  width: 18%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../images/windows.png");
 }
